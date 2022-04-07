@@ -1,0 +1,29 @@
+
+*{
+	box-sizing: border-box;
+
+border: solid #5B6DCD 2px;
+padding: 5px;
+}
+
+.titulos{
+	font-size: 20px;
+}
+
+.prueba_1::after {
+	content: "<- ejemplo 1 de after";
+	color:  green;
+}
+
+.prueba_2::after{
+	content: "<-ejemplo 2 de after";
+	color: red;
+}
+
+.prueba_3:after{
+	content: "<-prueba_3";
+	color: blueviolet;
+	font-size: 18px;
+	padding: 0px;
+	border: 5px yellow solid;
+}
