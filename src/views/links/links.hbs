@@ -1,0 +1,242 @@
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+    </div>
+
+    <div class="carousel-inner">
+
+        <div class="carousel-item active">
+            <a href="#adop">
+                <img src="img/perros.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1> No compres, adopta</h1>
+                    <p>
+                    <h3>Adopta a nuestros perros que necesitan un hogar</h3></p>
+                </div>
+            </a>>
+        </div>
+
+
+        <div class="carousel-item">
+            <a href="#vete">
+                <img src="img/veterinario.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3><strong style="color: black">Encuentra veterinarios</strong></h3>
+                </div>
+            </a>
+        </div>
+
+        <div class="carousel-item">
+            <a href="#pas">
+                <img src="img/pas.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Paseadores</h3>
+                    <p>Tu perro necesita salir, encuentra a un paseador en tu zona</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<main>
+
+
+
+    <div class="container p-4">
+        <section id="adop">
+            <div class="row">
+                {{#each adop2}}
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="containe">
+                            <h1>En adopcion</h1>
+                            <div class="label">
+                                Nombre: <span id="nombremas">{{nombre}}</span>
+                            </div>
+
+                            <div class="label">
+                                <br> Tipo: <span id="tipomas">{{tipo}}</span>
+                            </div>
+
+                            <div class="label">
+
+                                <br> Raza: <span id="razamas">{{raza}}</span>
+                            </div>
+                            <div class="label">
+                                <br> Edad: <span id="edadmas">{{edad}}</span>
+                            </div>
+                            <div class="label">
+                                <br> sexo: <span id="sexomas">{{sexo}}</span>
+                            </div>
+                            <div class="label">
+                                <br> Fecha de publicacion: <span id="sexomas">{{fecha}}</span>
+                            </div>
+                            <div class="label">
+                                <br>Persona que lo registro: <span id="sexomas">{{persona}}</span>
+                            </div>
+                            <div class="label">
+                                <br>contacto: <span id="sexomas">{{numer_cont}}</span>
+                            </div>
+                        </div>
+                    </div>
+
+                {{/each}}
+            </div>
+        </section>
+
+        <section id="vete">
+            <div class="row">
+                {{#each vete2}}
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="containe">
+                            <h3>Veterinario</h3>
+                            <div class="label">
+                                Nombre: <span id="nombremas5">{{nombre}}</span>
+                            </div>
+
+                            <div class="label">
+                                <br> Email: <span id="tipomas5">{{email}}</span>
+                            </div>
+
+                            <div class="label">
+
+                                <br> Contacto: <span id="razamas5">{{celular}}</span>
+                            </div>
+                            <div class="label">
+                                <br> Direccion: <span id="edadmas5">{{Direccion}}</span>
+                            </div>
+                        </div>
+                    </div>
+                {{/each}}
+                <div class="containe">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15033.435872399408!2d-99.32172109218749!3d19.611945300000013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d21bdf412cb3a5%3A0x443b00efad73e86d!2sConsultorio%20Veterinario%20%22Barron%22!5e0!3m2!1ses-419!2smx!4v1653969237062!5m2!1ses-419!2smx"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="pas">
+            <div class="row">
+                {{#each pasea2}}
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="containe">
+                            <h3>Paseador</h3>
+                            <div class="label">
+                                Nombre: <span id="nombremas5">{{nombre}}</span>
+                            </div>
+
+                            <div class="label">
+                                <br> Email: <span id="tipomas5">{{email}}</span>
+                            </div>
+
+                            <div class="label">
+
+                                <br> Contacto: <span id="razamas5">{{celular}}</span>
+                            </div>
+                            <div class="label">
+                                <br> Zona: <span id="edadmas5">{{zona}}</span>
+                            </div>
+                        </div>
+                    </div>
+                {{/each}}
+            </div>
+        </section>
+
+        <section id="cui">
+            <div class="row">
+                {{#each cui2}}
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="containe">
+                            <h3>cuidador</h3>
+                            <div class="label">
+                                Nombre: <span id="nombremas5">{{nombre}}</span>
+                            </div>
+
+                            <div class="label">
+                                <br> Email: <span id="tipomas5">{{email}}</span>
+                            </div>
+
+                            <div class="label">
+
+                                <br> Contacto: <span id="razamas5">{{contacto}}</span>
+                            </div>
+                            <div class="label">
+                                <br> Direccion: <span id="edadmas5">{{Direccion}}</span>
+                            </div>
+                        </div>
+                    </div>
+                {{/each}}
+            </div>
+        </section>
+
+        <section id="cli">
+            <div class="row">
+                {{#each cli2}}
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="containe">
+                            <h3>Clinica</h3>
+                            <div class="label">
+                                Nombre: <span id="nombremas5">{{nombre}}</span>
+                            </div>
+
+                            <div class="label">
+                                <br> Email: <span id="tipomas5">{{email}}</span>
+                            </div>
+
+                            <div class="label">
+
+                                <br> Contacto: <span id="razamas5">{{contacto}}</span>
+                            </div>
+                            <div class="label">
+                                <br> Direccion: <span id="edadmas5">{{Direccion}}</span>
+                            </div>
+                            <div class="label">
+                                <br> Servicios: <span id="sexomas5">{{servicios}}</span>
+                            </div>
+                        </div>
+                    </div>
+                {{/each}}
+            </div>
+        </section>
+
+        <section id="est">
+            <div class="row">
+                {{#each este2}}
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="containe">
+                            <h3>Estetica</h3>
+                            <div class="label">
+                                Nombre: <span id="nombremas5">  {{nombre}}  </span>
+                            </div>
+
+                            <div class="label">
+                                <br> Email: <span id="tipomas5">.{{email}}</span>
+                            </div>
+
+                            <div class="label">
+
+                                <br> Contacto: <span id="razamas5">{{celular}}</span>
+                            </div>
+                            <div class="label">
+                                <br> Direccion: <span id="edadmas5">{{Direccion}}</span>
+                            </div>
+                        </div>
+                    </div>
+                {{/each}}
+                <div class="containe">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.512953079984!2d-99.14664481872641!3d19.39023065128924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff4de01da4c9%3A0xf52a4e43df1b254b!2sEst%C3%A9tica%20Veterinaria!5e0!3m2!1ses-419!2smx!4v1653969469855!5m2!1ses-419!2smx"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+
+</main>
+
+

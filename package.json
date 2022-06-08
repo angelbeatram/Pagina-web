@@ -1,0 +1,39 @@
+{
+  "name": "Perritos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js --exec babel-node node-sass sass/main.scss public/css/estyle.css -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.4",
+    "express-mysql-session": "^2.1.7",
+    "express-session": "^1.17.2",
+    "express-validator": "^6.13.0",
+    "mongodb": "^4.4.1",
+    "morgan": "^1.10.0",
+    "mssql": "^7.2.1",
+    "node-sass": "^7.0.1",
+    "passport": "^0.5.0",
+    "passport-local": "^1.0.0",
+    "popover": "^2.4.1",
+    "rest-mssql-nodejs": "^1.0.10",
+    "timeago.js": "^4.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.18.0",
+    "@babel/node": "^7.17.10",
+    "@babel/preset-env": "^7.18.0",
+    "nodemon": "^2.0.15"
+  }
+}

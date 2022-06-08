@@ -1,0 +1,59 @@
+<div class="row">
+    <div class="col-md-6 mx-auto">
+        <div class="contenedor-bienvenida">
+            <H1>Bienvenido a tu mascota online</H1>
+            <img align="center" class="zoom" src="img/perro.png" width="80%" height="80%">
+        </div>
+        <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Creado con amor por Angel Ramirez">
+           Acerca de ...
+        </button>
+
+    </div>
+
+    <div class="col-md-6 mx-auto">
+        <!-- Formularios -->
+        <div class="contenedor-formularios">
+            <!-- Links de los formularios -->
+            <ul class="contenedor-tabs">
+                <li class="tab tab-segunda active"><a href="/signin">Iniciar Sesión</a></li>
+                <li class="tab tab-primera"><a href="/signup">Registrarse</a></li>
+            </ul>
+
+            <!-- Contenido de los Formularios -->
+
+            <!-- Iniciar Sesion -->
+            <div id="iniciar-sesion">
+                <h1 id="tiutloin">Iniciar Sesión</h1>
+                <form action="/signin" method="post">
+                    <div class="contenedor-input">
+                        <label for="usuarioin">
+
+                        </label>
+                        <input placeholder="Usuario" name="inusuario" id="usuarioin" type="text" required>
+                    </div>
+
+                    <div class="contenedor-input">
+                        <label for="contraseñain">
+
+                        </label>
+                        <input placeholder="Contraseña" name="incontrasena" id="contraseñain" type="password" required>
+                    </div>
+
+                    <button class="iniciar-sesion button-block" value="Iniciar Sesión">
+                        Iniciar sesion
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>
+    $(function(){
+        $('[data-toggle="popover"]'.popover();
+    });
+</script>
+<!-- Registrarse
+<script src="/js/Login.js"></script>-->

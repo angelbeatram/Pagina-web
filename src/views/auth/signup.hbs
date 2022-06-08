@@ -1,0 +1,73 @@
+<div class="row">
+        <div class="col-md-6 mx-auto">
+            <div class="contenedor-bienvenida">
+                <H1>Bienvenido a tu mascota online</H1>
+                <img align="center" src="img/perro.png" width="80%" height="80%">
+            </div>
+        </div>
+    <div class="col-md-6 mx-auto">
+
+        <div class="contenedor-formularios">
+            <ul class="contenedor-tabs">
+                <li class="tab tab-"><a href="/signin">Iniciar Sesión</a></li>
+                <li class="tab tab-segunda active"><a href="/signup">Registrarse</a></li>
+            </ul>
+            <!-- Links de los formularios -->
+            <div class="contenido-radio ">
+                <form action="/signup" method="post">
+
+                    <!-- Registrarse -->
+                    <div id="registrarse">
+                        <h1 id="titulore">Registrarse</h1>
+                        <ul class="contenedor-radio">
+
+                        </ul>
+                        <div class="contenido-persona" id="conperson">
+                            <div class="fila-arriba">
+                                <div class="contenedor-input">
+                                    <label for="nombrere">
+                                        <span class="req"></span>
+                                    </label>
+                                    <input placeholder="Nombre" name="nombre" id="nombrere" type="text" required>
+                                </div>
+
+                                <div class="contenedor-input">
+                                    <label for="apeidore">
+                                       <span class="req"></span>
+                                    </label>
+                                    <input placeholder="Apellido" name="apeido" id="apeidore" type="text" required>
+                                </div>
+                            </div>
+                            <div class="contenedor-input">
+                                <label for="usuariore">
+                                    <span class="req"></span>
+                                </label>
+                                <input placeholder="Usuario" name="usuario" id="usuariore" type="text" required>
+                            </div>
+                            <div class="contenedor-input">
+                                <label for="emailre">
+                                     <span class="req"></span>
+                                </label>
+                                <input placeholder="Email" name="email" id="emailre" type="email" required>
+                            </div>
+                            <div class="contenedor-input">
+                                <label for="contraseñare">
+                                     <span class="req"></span>
+                                </label>
+                                <input placeholder="Contraseña *" name="contrasena" id="contraseñare" type="password" required>
+                            </div>
+                            <div class="g-recaptcha" data-sitekey="6LdxbzAgAAAAALttYf3ZcTEchJWl_e5y0kRVWGvq"></div>
+                            <input type="submit" class="registrar-usuario button-block regis-usuario"
+                                   value="Registrarse">
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Registrarse
+<script src="/js/Login.js"></script>-->

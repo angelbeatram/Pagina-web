@@ -1,0 +1,398 @@
+<div class="row">
+{{#each persona}}
+    <div class="col-md-4 mx-auto">
+        <div class="containe">
+        <form method="post">
+    <div class="contenido-persona" id="conperson">
+        <div class="fila-arriba">
+            <div class="contenedor-input">
+                <label for="nombrere">
+                     <span class="req"></span>
+                </label>
+                <input value="{{nombre}}"  name="nombre" id="nombrere" type="text" >
+            </div>
+
+            <div class="contenedor-input">
+                <label for="apeidore">
+                    <span class="req"></span>
+                </label>
+                <input value=" {{apellido}}" name="apeido" id="apeidore" type="text" >
+            </div>
+        </div>
+        <div class="contenedor-input">
+            <label for="usuariore">
+                 <span class="req"></span>
+            </label>
+            <input value="{{usuario}}" name ="usuario" id="usuariore" type="text" >
+        </div>
+        <div class="contenedor-input">
+            <label for="emailre">
+                 <span class="req"></span>
+            </label>
+            <input value="{{email}}" name="email" id="emailre" type="email" >
+        </div>
+        <div class="contenedor-input">
+            <label for="contraseñare">
+                Contraseña <span class="req"></span>
+            </label>
+            <input name="contrasena" id="contraseñare" type="password" required>
+        </div>
+        <input  type="submit" class="registrar-usuario button-block regis-usuario"
+               value="Editar">
+    </div>
+        </form>
+    </div>
+    </div>
+{{/each}}
+
+
+{{#each cui2}}
+    <div class="contenedor-formularios">
+        <form method="post">
+
+        <div class="contenido-persona">
+        <div class="fila-arriba">
+            <div class="contenedor-input">
+                <label for="nombrecui">
+                    <span class="req"></span>
+                </label>
+                <input value="{{nombre}}" name="nombre" type="text" >
+            </div>
+
+            <div class="contenedor-input">
+                <label for="apeido">
+                     <span class="req"></span>
+                </label>
+                <input value="{{apellido}}" name="apeido" type="text" >
+            </div>
+        </div>
+        <div class="contenedor-input">
+            <label for="usuariocui">
+                <span class="req"></span>
+            </label>
+            <input value="{{usuario}}" name="usuario" type="text" >
+        </div>
+        <div class="contenedor-input">
+            <label for="emailcui">
+                 <span class="req"></span>
+            </label>
+            <input value="{{email}}" name="email" type="email" >
+        </div>
+        <div class="contenedor-input">
+            <label for="celcui">
+                <span class="req"></span>
+            </label>
+            <input value="{{celular}}" name="celular" type="text" >
+        </div>
+        <div class="contenedor-input">
+            <label for="callecui">
+                <span class="req"></span>
+            </label>
+            <input value="{{calle_num}}" name="calle_num" type="text" >
+        </div>
+        <div class="contenedor-input">
+            <label for="coloniacui">
+                 <span class="req"></span>
+            </label>
+            <input value="{{colonia}}" name="colonia" type="text" >
+        </div>
+        <div class="contenedor-input">
+            <label for="municipiocui">
+                 <span class="req"></span>
+            </label>
+            <input value="{{delegacion_muni}}" name="delegacion_muni" type="text" >
+        </div>
+        <div class="contenedor-input">
+            <label for="cpcui">
+                 <span class="req"></span>
+            </label>
+            <input value="{{codigo_postal}}" name="codigo_postal" type="number" >
+        </div>
+        <div class="contenedor-input">
+            <label for="contracui">
+               nueva contraseña <span class="req">*</span>
+            </label>
+            <input name="contrasena" type="password" required>
+        </div>
+            <input  type="submit" class="registrar-usuario button-block regis-usuario"
+                    value="Editar">
+    </div>
+
+        </form>
+    </div>
+{{/each}}
+
+{{#each cli2}}
+    <div class="contenedor-formularios">
+        <form method="post">
+
+        <div class="contenido-persona">
+        <div class="contenedor-input">
+            <label for="nombre">
+                <span class="req"></span>
+            </label>
+            <input value="{{nombre}}" name="nombre" type="text" required>
+        </div>
+
+        <div class="contenedor-input">
+            <label for="usuariocli">
+                 <span class="req"></span>
+            </label>
+            <input value="{{usuario}}" name="usuario" type="text" required>
+        </div>
+        <div class="contenedor-input">
+            <label for="emailcli">
+                 <span class="req"></span>
+            </label>
+            <input value="{{email}}" name="email" type="email" required>
+        </div>
+        <div class="contenedor-input">
+            <label for="cel">
+                <span class="req"></span>
+            </label>
+            <input value="{{numero_contacto}}" name="celular" type="text" required>
+        </div>
+        <div class="contenedor-input">
+            <label for="permisocli">
+                <span class="req"></span>
+            </label>
+            <input value="{{permiso}}" name="permiso" type="text" required>
+        </div>
+        <div class="contenedor-input">
+            <label for="callecli">
+                <span class="req"></span>
+            </label>
+            <input value="{{calle_num}}" name="calle" type="text" required>
+        </div>
+        <div class="contenedor-input">
+            <label for="coloniacli">
+                 <span class="req"></span>
+            </label>
+            <input value="{{colonia}}" name="colonia" type="text" required>
+        </div>
+        <div class="contenedor-input">
+            <label for="municipiocli">
+                 <span class="req"></span>
+            </label>
+            <input value="{{delegacion_muni}}" name="delegacion_muni" type="text" required>
+        </div>
+        <div class="contenedor-input">
+            <label for="cpcli">
+                 <span class="req">*</span>
+            </label>
+            <input value="{{Codigo_postal}}" name="codigo_postal" type="number" required>
+        </div>
+        <div class="contenedor-input">
+            <label for="servicioscli">
+                 <span class="req"></span>
+            </label>
+            <input value="{{servicios}}" name="servicios" type="text" required>
+        </div>
+        <div class="contenedor-input">
+            <label for="contracli">
+                Contraseña <span class="req"></span>
+            </label>
+            <input name="contrasena" type="password" required>
+
+        </div>
+            <input  type="submit" class="registrar-usuario button-block regis-usuario"
+                    value="Editar">
+    </div>
+        </form>
+    </div>
+{{/each}}
+
+{{#each este2}}
+    <div class="contenedor-formularios">
+        <form method="post">
+
+        <div class="contenido-persona">
+        <div class="contenedor-input">
+            <label for="nombreest">
+                 <span class="req"></span>
+            </label>
+            <input value="{{nombre}}" name="nombre" type="text">
+        </div>
+        <div class="contenedor-input">
+            <label for="usuario">
+                 <span class="req"></span>
+            </label>
+            <input value="{{usuario}}" name="usuario" type="text" >
+        </div>
+        <div class="contenedor-input">
+            <label for="emailest">
+                 <span class="req"></span>
+            </label>
+            <input value="{{email}}" name="email" type="email">
+        </div>
+        <div class="contenedor-input">
+            <label for="numeest">
+                 <span class="req"></span>
+            </label>
+            <input value="{{celular}}" name="celular" type="text" >
+        </div>
+        <div class="contenedor-input">
+            <label for="calleest">
+                <span class="req"></span>
+            </label>
+            <input value="{{calle_num}}" name="calle_num" type="text" >
+        </div>
+        <div class="contenedor-input">
+            <label for="coloniaest">
+                 <span class="req"></span>
+            </label>
+            <input value="{{colonia}}" name="colonia" type="text">
+        </div>
+        <div class="contenedor-input">
+            <label for="municipioest">
+                <span class="req"></span>
+            </label>
+            <input value="{{delegacion_muni}}" name="delegacion_muni" type="text">
+        </div>
+        <div class="contenedor-input">
+            <label for="cpest">
+                 <span class="req"></span>
+            </label>
+            <input value="{{codigo_postal}}" name="codigo_postal" type="number" >
+        </div>
+        <div class="contenedor-input">
+            <label for="contraest">
+                Contraseña <span class="req"></span>
+            </label>
+            <input name="contrasena" type="password" required>
+        </div>
+            <input  type="submit" class="registrar-usuario button-block regis-usuario"
+                    value="Editar">
+    </div>
+
+        </form>
+    </div>
+{{/each}}
+
+{{#each pasea2}}
+    <div class="contenedor-formularios">
+        <form method="post">
+        <div class="contenido-persona">
+        <div class="fila-arriba">
+            <div class="contenedor-input">
+                <label for="nombrepas">
+                     <span class="req"></span>
+                </label>
+                <input value="{{nombre}}" name="nombre" type="text" >
+            </div>
+
+            <div class="contenedor-input">
+                <label for="apeidopas">
+                    <span class="req"></span>
+                </label>
+                <input value="{{apellido}}" name="apeido" type="text" >
+            </div>
+        </div>
+        <div class="contenedor-input">
+            <label for="usuariopas">
+                 <span class="req"></span>
+            </label>
+            <input value="{{usuario}}" name="usuario" type="text" >
+        </div>
+        <div class="contenedor-input">
+            <label for="celpas">
+                 <span class="req"></span>
+            </label>
+            <input value="{{celular}}" name="celular" type="text" >
+        </div>
+        <div class="contenedor-input">
+            <label for="emailpas">
+                 <span class="req"></span>
+            </label>
+            <input value="{{email}}" name="email" type="email" >
+        </div>
+        <div class="contenedor-input">
+            <label for="zonapas">
+                 <span class="req"></span>
+            </label>
+            <input value="{{zona_paseo}}" name="zona_paseo" type="text" >
+        </div>
+        <div class="contenedor-input">
+            <label for="contrapas">
+                Contraseña <span class="req"></span>
+            </label>
+            <input name="contrasena" type="password" required>
+        </div>
+            <input  type="submit" class="registrar-usuario button-block regis-usuario"
+                    value="Editar">
+    </div>
+        </form>
+    </div>
+{{/each}}
+
+{{#each vete2}}
+    <div class="contenedor-formularios">
+        <form method="post">
+
+        <div class="contenido-persona" id="veter">
+            <div class="fila-arriba">
+                <div class="contenedor-input">
+                    <label for="nombrevete">
+                         <span class="req"></span>
+                    </label>
+                    <input value="{{nombre}}" name="nombre" type="text" >
+                </div>
+                <div class="contenedor-input">
+                    <label for="apeidovete">
+                         <span class="req"></span>
+                    </label>
+                    <input value="{{apellido}}" name="apeido" type="text" >
+                </div>
+            </div>
+            <div class="contenedor-input">
+                <label for="usuariovete">
+                     <span class="req"></span>
+                </label>
+                <input value="{{usuario}}" name="usuario" type="text" >
+            </div>
+            <div class="contenedor-input">
+                <label for="emailvete">
+                     <span class="req"></span>
+                </label>
+                <input value="{{email}}" name="email" type="email" >
+            </div>
+            <div class="contenedor-input">
+                <label for="numcelvete">
+                    <span class="req"></span>
+                </label>
+                <input value="{{celular}}" name="celular" type="text" >
+            </div>
+            <div class="contenedor-input">
+                <label for="callevete">
+                    <span class="req"></span>
+                </label>
+                <input value="{{calle_num}}" name="calle_numero" type="text" >
+            </div>
+            <div class="contenedor-input">
+                <label for="coloniavete">
+                     <span class="req"></span>
+                </label>
+                <input value="{{colonia}}" name="colonia" type="text" >
+            </div>
+            <div class="contenedor-input">
+                <label for="municipiovete">
+                     <span class="req"></span>
+                </label>
+                <input value="{{delegacion_muni}}" name="delegacion_muni" type="text" >
+            </div>
+
+
+            <div class="contenedor-input">
+                <label for="contrasena">
+                    Contraseña <span class="req">*</span>
+                </label>
+                <input name="contrasena" type="password" required>
+            </div>
+            <input  type="submit" class="registrar-usuario button-block regis-usuario"
+                    value="Editar">
+        </div>
+        </form>
+    </div>
+{{/each}}
+
+</div>
